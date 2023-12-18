@@ -49,7 +49,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <p style={{ margin: 0, padding: 0 }}></p>
 
         <div style={{ margin: '0px', padding: '20px', backgroundColor: 'rgba(0, 0, 0, 0)', color: '#fff', position: 'absolute', top: '65%', left: '0%', width: '30%' }}>
-          <p>{"APRENEUE IS FORM FROM FUNCTION PRODUCT DESIGN, FORM FROM FUNCTION FASHION APRENEUE IS FORM FROM FUNCTION PRODUCT DESIGN, FORM FROM FUNCTION FASHION"}</p>
+          <p>{/*"APRENEUE IS FORM FROM FUNCTION PRODUCT DESIGN, FORM FROM FUNCTION FASHION APRENEUE IS FORM FROM FUNCTION PRODUCT DESIGN, FORM FROM FUNCTION FASHION"*/}</p>
         </div>
 
       </div>

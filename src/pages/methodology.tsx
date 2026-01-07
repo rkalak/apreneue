@@ -36,7 +36,7 @@ const Methodology: React.FC = () => {
               Apreneue is synthesizing art and engineering into a novel landscape for fashion and functional product design. Our north star is to influence both wardrobes and living spaces with an industrial, biomimetic permanence.
             </p>
             <p className="text-[14px] md:text-[16px] text-[#C0C0C0] leading-relaxed">
-              We're integrating topology optimization, end-use additive manufacturing, and design methodology taken directly from our work as roboticists to build never before seen workflows into the fashion and design arena. To warrant environmental ubiquity, we operate at an abstracted, ecosystem level.
+              We&apos;re integrating topology optimization, end-use additive manufacturing, and design methodology taken directly from our work as roboticists to build never before seen workflows into the fashion and design arena. To warrant environmental ubiquity, we operate at an abstracted, ecosystem level.
             </p>
           </div>
         </section>
@@ -72,7 +72,7 @@ const Methodology: React.FC = () => {
           <p className="text-[9px] uppercase tracking-[0.2em] text-[#6A6A6A] mb-6">Methodology</p>
           <div className="max-w-2xl">
             <p className="text-[14px] md:text-[16px] text-[#C0C0C0] leading-relaxed mb-6">
-              Topology optimization is a data driven design technique that we've been experimenting with since 2017. Governed by the implicit modeling architecture, we have an ability to parametrically alter our product optimizations in real time. The resulting geometries are unprecedented.
+              Topology optimization is a data driven design technique that we&apos;ve been experimenting with since 2017. Governed by the implicit modeling architecture, we have an ability to parametrically alter our product optimizations in real time. The resulting geometries are unprecedented.
             </p>
             <p className="text-[14px] md:text-[16px] text-[#C0C0C0] leading-relaxed">
               This novel computational design tech in congruence with end-use additive manufacturing techniques and engineered mechanisms is our edge. No longer is there a limiting factor for innovation in the fashion industry.

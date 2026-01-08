@@ -7,7 +7,7 @@ const Methodology: React.FC = () => {
     <>
       <Head>
         <title>Methodology — APRENEUE</title>
-        <link rel="icon" href="/images/aprefavicon.png" />
+        <link rel="icon" href="/images/apreneue-globe-logo.png" />
         <meta name="description" content="Topology optimization and computational design methodology." />
       </Head>
 

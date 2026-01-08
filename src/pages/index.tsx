@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     <>
       <Head>
         <title>APRENEUE</title>
-        <link rel="icon" href="/images/aprefavicon.png" />
+        <link rel="icon" href="/images/apreneue-globe-logo.png" />
         <meta name="description" content="Synthesizing art and engineering into fashion and functional product design." />
       </Head>
 

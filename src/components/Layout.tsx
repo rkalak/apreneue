@@ -22,7 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div style={{ backgroundColor, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '0vh', display: 'flex', flexDirection: 'column', margin: -8, padding: 0, overflowY: 'auto'}}>
       <Head>
         {/* Add the link tag for the favicon in the head section */}
-        <link rel="icon" href="/images/apreneue-globe-logo.png" />
+        <link rel="icon" href="/images/apreneue-favicon.png" />
       </Head>
       <header style={{ textAlign: 'center', padding: '10px', backgroundColor: 'rgba(0, 0, 0, 0)', color: '#000', fontFamily: 'Helvetica Neue', fontWeight: 'bold', margin: 0, letterSpacing: '10px', zIndex: 1, marginTop: '-4vh' }}>
         <h1>apreneue</h1>

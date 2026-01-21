@@ -19,43 +19,41 @@ const Shop: React.FC = () => {
         <meta name="description" content="Explore our collection of minimalistic tech-forward fashion." />
       </Head>
 
-      <div className="min-h-screen bg-black">
+      <div className="min-h-screen bg-[#0A0A0A] text-[#E5E5E5]">
         {/* Hero */}
-        <section className="py-24 px-6 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6">
-            Collection
-          </h1>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            Premium pieces engineered for the modern individual
-          </p>
+        <section className="h-[30vh] relative">
+          <div className="absolute bottom-0 left-0 p-4 pb-8">
+            <p className="text-[8px] uppercase tracking-[0.15em] text-[#6A6A6A] mb-1">Shop</p>
+            <h1 className="text-sm tracking-[0.05em] uppercase">Collection</h1>
+          </div>
         </section>
 
         {/* Product Grid */}
-        <section className="py-16 px-6 pb-32">
-          <div className="mx-auto max-w-container">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-              {products.map((product) => (
-                <div
-                  key={product.id}
-                  className="group cursor-pointer"
-                >
-                  <div className="relative aspect-[3/4] bg-hover-state overflow-hidden">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
-                    <div className="absolute inset-0 ring-1 ring-border-color group-hover:ring-accent transition-all duration-300" />
-                  </div>
-                  <div className="mt-6">
-                    <h3 className="text-lg font-medium mb-2">{product.name}</h3>
-                    <p className="text-text-secondary">{product.price}</p>
-                  </div>
+        <div className="category-header flex items-center justify-between">
+          <span>Products</span>
+        </div>
+
+        <section className="grid-3">
+          {products.map((product) => (
+            <div key={product.id} className="group cursor-pointer">
+              <div className="product-tile">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 flex items-end p-2">
+                  <span className="text-[7px] uppercase tracking-widest text-[#4A4A4A]">
+                    {product.name}
+                  </span>
                 </div>
-              ))}
+              </div>
+              <div className="product-info px-2">
+                <p className="product-title">{product.name}</p>
+                <p className="product-price">{product.price}</p>
+              </div>
             </div>
-          </div>
+          ))}
         </section>
       </div>
     </Layout>

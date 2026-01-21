@@ -17,44 +17,37 @@ const Navigation: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled ? 'bg-black/90 backdrop-blur-sm' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-[#1A1A1A] ${
+        isScrolled ? 'bg-[#0A0A0A]/90 backdrop-blur-sm' : 'bg-[#0A0A0A]/90 backdrop-blur-sm'
       }`}
     >
-      <div className="mx-auto max-w-container px-6 md:px-12">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link href="/" className="relative w-12 h-12">
+      <div className="flex items-center justify-between px-4 py-3">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2">
+          <div className="relative w-4 h-4">
             <Image
               src="/images/apreneue-globe-logo MAIN LOGO.png"
               alt="Apreneue"
               fill
-              className="object-contain"
+              className="object-contain invert opacity-60"
               priority
             />
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-12">
-            <Link
-              href="/shop"
-              className="text-sm tracking-wide text-white uppercase hover:text-accent transition-colors duration-200"
-            >
-              Shop
-            </Link>
-            <Link
-              href="/about"
-              className="text-sm tracking-wide text-white uppercase hover:text-accent transition-colors duration-200"
-            >
-              About
-            </Link>
-            <Link
-              href="/contact"
-              className="text-sm tracking-wide text-white uppercase hover:text-accent transition-colors duration-200"
-            >
-              Contact
-            </Link>
           </div>
+          <span className="text-[9px] tracking-[0.15em] uppercase">Apreneue</span>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-5">
+          <Link href="/shop" className="nav-link">
+            Shop
+          </Link>
+          <Link href="/about" className="nav-link">
+            About
+          </Link>
+          <Link href="/contact" className="nav-link">
+            Contact
+          </Link>
+        </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -80,33 +73,32 @@ const Navigation: React.FC = () => {
               />
             </div>
           </button>
-        </div>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-black transition-all duration-300 overflow-hidden ${
-          isMobileMenuOpen ? 'max-h-64 border-t border-border-color' : 'max-h-0'
+        className={`md:hidden bg-[#0A0A0A] transition-all duration-300 overflow-hidden ${
+          isMobileMenuOpen ? 'max-h-64 border-t border-[#1A1A1A]' : 'max-h-0'
         }`}
       >
-        <div className="px-6 py-8 space-y-6">
+        <div className="px-4 py-4 space-y-3">
           <Link
             href="/shop"
-            className="block text-sm tracking-wide text-white uppercase hover:text-accent transition-colors duration-200"
+            className="block nav-link"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Shop
           </Link>
           <Link
             href="/about"
-            className="block text-sm tracking-wide text-white uppercase hover:text-accent transition-colors duration-200"
+            className="block nav-link"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             About
           </Link>
           <Link
             href="/contact"
-            className="block text-sm tracking-wide text-white uppercase hover:text-accent transition-colors duration-200"
+            className="block nav-link"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Contact

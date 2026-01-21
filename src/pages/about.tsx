@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Layout from '../components/Layout';
 
 const About: React.FC = () => {
@@ -10,96 +11,76 @@ const About: React.FC = () => {
         <meta name="description" content="Learn about our mission and vision." />
       </Head>
 
-      <div className="min-h-screen bg-black">
+      <div className="min-h-screen bg-[#0A0A0A] text-[#E5E5E5]">
         {/* Hero */}
-        <section className="py-24 px-6 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6">
-            About Apreneue
-          </h1>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            Where technology meets fashion
-          </p>
+        <section className="h-[40vh] relative">
+          <div className="absolute bottom-0 left-0 p-4 pb-8">
+            <p className="text-[8px] uppercase tracking-[0.15em] text-[#6A6A6A] mb-1">About</p>
+            <h1 className="text-sm tracking-[0.05em] uppercase">Where Technology Meets Fashion</h1>
+          </div>
         </section>
 
         {/* Story Section */}
-        <section className="py-16 px-6">
-          <div className="mx-auto max-w-3xl space-y-16">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tighter">
-                Our Story
-              </h2>
-              <div className="space-y-4 text-text-secondary text-lg leading-relaxed">
-                <p>
-                  Apreneue represents the synthesis of art and engineering, where cutting-edge
-                  technology meets refined aesthetics. We believe in creating pieces that are
-                  both functional and beautiful.
-                </p>
-                <p>
-                  Every garment is meticulously designed with attention to detail, using premium
-                  materials and innovative construction techniques. Our minimalistic approach
-                  emphasizes clean lines, thoughtful proportions, and timeless design.
-                </p>
-              </div>
-            </div>
+        <section className="p-4 py-8 border-t border-[#1A1A1A]">
+          <p className="text-[8px] uppercase tracking-[0.15em] text-[#6A6A6A] mb-2">Our Story</p>
+          <div className="space-y-3 text-[9px] text-[#6A6A6A] max-w-md leading-relaxed">
+            <p>
+              Apreneue represents the synthesis of art and engineering, where cutting-edge
+              technology meets refined aesthetics. We believe in creating pieces that are
+              both functional and beautiful.
+            </p>
+            <p>
+              Every garment is meticulously designed with attention to detail, using premium
+              materials and innovative construction techniques.
+            </p>
+          </div>
+        </section>
 
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tighter">
-                Our Mission
-              </h2>
-              <div className="space-y-4 text-text-secondary text-lg leading-relaxed">
-                <p>
-                  To redefine modern fashion through the lens of technology and innovation.
-                  We create garments that adapt to the needs of contemporary life while
-                  maintaining a commitment to sustainability and ethical production.
-                </p>
-                <p>
-                  Form follows function. Every design decision serves a purpose, creating
-                  clothing that enhances your daily experience without compromise.
-                </p>
-              </div>
-            </div>
+        {/* Mission Section */}
+        <section className="p-4 py-8 border-t border-[#1A1A1A]">
+          <p className="text-[8px] uppercase tracking-[0.15em] text-[#6A6A6A] mb-2">Our Mission</p>
+          <div className="space-y-3 text-[9px] text-[#6A6A6A] max-w-md leading-relaxed">
+            <p>
+              To redefine modern fashion through the lens of technology and innovation.
+              Form follows function. Every design decision serves a purpose.
+            </p>
+          </div>
+        </section>
 
+        {/* Values Section */}
+        <section className="p-4 py-8 border-t border-[#1A1A1A]">
+          <p className="text-[8px] uppercase tracking-[0.15em] text-[#6A6A6A] mb-2">Our Values</p>
+          <div className="grid grid-cols-3 gap-4">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tighter">
-                Our Values
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3">Innovation</h3>
-                  <p className="text-text-secondary">
-                    Pushing boundaries through experimental materials and construction methods.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3">Quality</h3>
-                  <p className="text-text-secondary">
-                    Uncompromising standards in craftsmanship and material selection.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3">Sustainability</h3>
-                  <p className="text-text-secondary">
-                    Responsible production with minimal environmental impact.
-                  </p>
-                </div>
-              </div>
+              <p className="text-[9px] uppercase tracking-[0.05em] text-[#E5E5E5] mb-1">Innovation</p>
+              <p className="text-[8px] text-[#6A6A6A]">
+                Pushing boundaries through experimental materials.
+              </p>
+            </div>
+            <div>
+              <p className="text-[9px] uppercase tracking-[0.05em] text-[#E5E5E5] mb-1">Quality</p>
+              <p className="text-[8px] text-[#6A6A6A]">
+                Uncompromising standards in craftsmanship.
+              </p>
+            </div>
+            <div>
+              <p className="text-[9px] uppercase tracking-[0.05em] text-[#E5E5E5] mb-1">Sustainability</p>
+              <p className="text-[8px] text-[#6A6A6A]">
+                Responsible production practices.
+              </p>
             </div>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="py-32 px-6 bg-hover-state">
-          <div className="mx-auto max-w-container text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tighter">
-              Explore Our Work
-            </h2>
-            <a
-              href="/shop"
-              className="inline-block px-12 py-4 bg-accent text-white uppercase text-sm tracking-wide hover:scale-105 transition-transform duration-200"
-            >
-              View Collection
-            </a>
-          </div>
+        <section className="p-4 py-8 border-t border-[#1A1A1A]">
+          <p className="text-[8px] uppercase tracking-[0.15em] text-[#6A6A6A] mb-3">Explore</p>
+          <Link
+            href="/shop"
+            className="btn"
+          >
+            View Collection
+          </Link>
         </section>
       </div>
     </Layout>

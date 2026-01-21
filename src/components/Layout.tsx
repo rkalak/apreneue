@@ -16,9 +16,9 @@ const Layout: React.FC<LayoutProps> = ({ children, showLoading = false }) => {
       {isLoading && (
         <LoadingScreen onLoadingComplete={() => setIsLoading(false)} />
       )}
-      <div className={`min-h-screen bg-black text-white ${isLoading ? 'hidden' : 'block'}`}>
+      <div className={`min-h-screen bg-[#0A0A0A] text-[#E5E5E5] ${isLoading ? 'hidden' : 'block'}`}>
         <Navigation />
-        <main className="pt-20">
+        <main className="pt-12">
           {children}
         </main>
         <Footer />

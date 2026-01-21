@@ -7,17 +7,15 @@ const About: React.FC = () => {
   return (
     <Layout>
       <Head>
-        <title>About — APRENEUE</title>
+        <title>Methodology — APRENEUE</title>
         <meta name="description" content="Learn about our mission and vision." />
       </Head>
 
       <div className="min-h-screen bg-[#0A0A0A] text-[#E5E5E5]">
-        {/* Hero */}
-        <section className="h-[40vh] relative">
-          <div className="absolute bottom-0 left-0 p-4 pb-8">
-            <p className="text-[8px] uppercase tracking-[0.15em] text-[#6A6A6A] mb-1">About</p>
-            <h1 className="text-sm tracking-[0.05em] uppercase">Where Technology Meets Fashion</h1>
-          </div>
+        {/* Page Title */}
+        <section className="p-4 pt-8">
+          <p className="text-[8px] uppercase tracking-[0.15em] text-[#6A6A6A] mb-1">Methodology</p>
+          <h1 className="text-sm tracking-[0.05em] uppercase">Where Technology Meets Fashion</h1>
         </section>
 
         {/* Story Section */}

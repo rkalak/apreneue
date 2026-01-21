@@ -20,12 +20,10 @@ const Shop: React.FC = () => {
       </Head>
 
       <div className="min-h-screen bg-[#0A0A0A] text-[#E5E5E5]">
-        {/* Hero */}
-        <section className="h-[30vh] relative">
-          <div className="absolute bottom-0 left-0 p-4 pb-8">
-            <p className="text-[8px] uppercase tracking-[0.15em] text-[#6A6A6A] mb-1">Shop</p>
-            <h1 className="text-sm tracking-[0.05em] uppercase">Collection</h1>
-          </div>
+        {/* Page Title */}
+        <section className="p-4 pt-8">
+          <p className="text-[8px] uppercase tracking-[0.15em] text-[#6A6A6A] mb-1">Shop</p>
+          <h1 className="text-sm tracking-[0.05em] uppercase">Collection</h1>
         </section>
 
         {/* Product Grid */}

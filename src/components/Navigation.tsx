@@ -44,7 +44,7 @@ const Navigation: React.FC = () => {
           <Link href="/shop" className="nav-link">
             Shop
           </Link>
-          <Link href="/methodology" className="nav-link">
+          <Link href="/about" className="nav-link">
             Methodology
           </Link>
           <Link href="/contact" className="nav-link">
@@ -100,7 +100,7 @@ const Navigation: React.FC = () => {
             Shop
           </Link>
           <Link
-            href="/methodology"
+            href="/about"
             className="block nav-link"
             onClick={() => setIsMobileMenuOpen(false)}
           >

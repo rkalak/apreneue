@@ -38,11 +38,14 @@ const Navigation: React.FC = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-5">
+          <Link href="/" className="nav-link">
+            Home
+          </Link>
           <Link href="/shop" className="nav-link">
             Shop
           </Link>
-          <Link href="/about" className="nav-link">
-            About
+          <Link href="/methodology" className="nav-link">
+            Methodology
           </Link>
           <Link href="/contact" className="nav-link">
             Contact
@@ -83,6 +86,13 @@ const Navigation: React.FC = () => {
       >
         <div className="px-4 py-4 space-y-3">
           <Link
+            href="/"
+            className="block nav-link"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
             href="/shop"
             className="block nav-link"
             onClick={() => setIsMobileMenuOpen(false)}
@@ -90,11 +100,11 @@ const Navigation: React.FC = () => {
             Shop
           </Link>
           <Link
-            href="/about"
+            href="/methodology"
             className="block nav-link"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            About
+            Methodology
           </Link>
           <Link
             href="/contact"
